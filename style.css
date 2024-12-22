@@ -1,0 +1,41 @@
+/* Première image : Positionné à partir du coin supérieur gauche */
+.sprite-img1 {
+    width: 960px;
+    height: 960px;
+    background: url('sprite.png') 0px 0px; /* Découpe à partir de (0px, 0px) */
+}
+
+/* Deuxième image : Positionné après la première image, à partir de 960px à gauche */
+.sprite-img2 {
+    width: 301px;
+    height: 541px;
+    background: url('sprite.png') -960px 0px; /* Découpe à partir de (-960px, 0px) */
+}
+
+/* Troisième image : Positionné après la deuxième image, à partir de 1261px à gauche */
+.sprite-img3 {
+    width: 1024px;
+    height: 1024px;
+    background: url('sprite.png') -1261px 0px; /* Découpe à partir de (-1261px, 0px) */
+}
+
+/* Quatrième image : Positionné après la troisième image, à partir de 2285px à gauche */
+.sprite-img4 {
+    width: 1000px;
+    height: 948px;
+    background: url('sprite.png') -2285px 0px; /* Découpe à partir de (-2285px, 0px) */
+}
+
+/* En utilisant display: inline-block */
+div {
+    display: inline-block;
+    margin-right: 10px; /* Ajouter un petit espace entre les images */
+}
+
+/* Ou en utilisant Flexbox */
+body {
+    display: flex;
+    justify-content: space-around; /* Centrer et espacer les images */
+}
+
+
